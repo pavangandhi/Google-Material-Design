@@ -29,5 +29,9 @@
 */
 
 public protocol MaterialCollectionViewDataSource : MaterialDelegate, UICollectionViewDataSource {
-	func items() -> Array<MaterialCollectionViewDataSourceItem>
+	/**
+	/// Retrieves the items for the collectionView.
+	- Returns: An Array of Arrays of MaterialCollectionViewDataSourceItem objects.
+	*/
+	func items() -> Array<Array<MaterialCollectionViewDataSourceItem>>
 }
